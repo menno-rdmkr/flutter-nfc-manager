@@ -1,25 +1,25 @@
 name: nfc_manager
-description: Flutter plugin for accessing the NFC features on Android and iOS.
-version: 3.2.0
+description: A Flutter plugin for accessing the NFC features on Android and iOS.
+version: 4.0.0-dev
 homepage: https://github.com/okadan/flutter-nfc-manager
 
 environment:
-  sdk: '>=2.18.1 <3.0.0'
-  flutter: ">=2.5.0"
+  sdk: '>=3.3.4 <4.0.0'
+  flutter: '>=3.3.0'
 
 dependencies:
   flutter:
     sdk: flutter
+  ndef_record:
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
+  pigeon:
 
 flutter:
   plugin:
     platforms:
       android:
-        package: io.flutter.plugins.nfcmanager
+        package: dev.flutter.plugins.nfcmanager
         pluginClass: NfcManagerPlugin
       ios:
         pluginClass: NfcManagerPlugin
